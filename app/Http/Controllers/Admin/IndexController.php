@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Reports;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class IndexController extends Controller
+{
+    public function index()
+    {
+        return view('admin.index', ['reports' => new Reports()]);
+    }
+
+    public function name()
+    {
+        echo "dang van cuong";
+    }
+}
